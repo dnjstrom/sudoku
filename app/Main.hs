@@ -76,5 +76,5 @@ play = do
 
 main :: IO ()
 main = do
-  final <- evalStateT play finished
+  final <- evalStateT play empty
   withColor Green $ putStrLn "You've WON!" >> print final
